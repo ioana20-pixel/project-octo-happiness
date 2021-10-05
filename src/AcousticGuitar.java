@@ -26,13 +26,13 @@ public class AcousticGuitar {
         level = scan.nextLine();
 
         switch (level){
-            case "Advanced":
+            case "advanced":
                 System.out.println(toString(choice,aa));
                 break;
-            case "Intermediate":
+            case "intermediate":
                 System.out.println(toString(choice,ai));
                 break;
-            case "Begginer":
+            case "begginer":
                 System.out.println(toString(choice,ab));
 
             default:

@@ -26,13 +26,13 @@ public class Bass {
         level = scan.nextLine();
 
         switch (level){
-            case "Advanced":
+            case "advanced":
                 System.out.println(toString(choice,ba));
                 break;
-            case "Intermediate":
+            case "intermediate":
                 System.out.println(toString(choice,bi));
                 break;
-            case "Begginer":
+            case "begginer":
                 System.out.println(toString(choice,bb));
 
             default:

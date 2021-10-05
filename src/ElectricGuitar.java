@@ -26,13 +26,13 @@ public class ElectricGuitar {
         level = scan.nextLine();
 
         switch (level){
-            case "Advanced":
+            case "advanced":
                 System.out.println(toString(choice,ea));
                 break;
-            case "Intermediate":
+            case "intermediate":
                 System.out.println(toString(choice,ei));
                 break;
-            case "Begginer":
+            case "begginer":
                 System.out.println(toString(choice,eb));
 
             default:

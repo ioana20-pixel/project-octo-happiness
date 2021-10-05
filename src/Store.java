@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Store {
 
 
-
     public static void main(String[] args) {
 
         System.out.println("What kind of guitar do you need?");
+        System.out.println("Acoustic, electric, a bass or a classic?");
 
         Scanner scan = new Scanner(System.in);
 

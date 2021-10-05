@@ -27,13 +27,13 @@ public class ClassicGuitar {
 
 
         switch (level){
-            case "Advanced":
+            case "advanced":
                 System.out.println(toString(choice,ca));
                 break;
-            case "Intermediate":
+            case "intermediate":
                 System.out.println(toString(choice,ci));
                 break;
-            case "Begginer":
+            case "begginer":
                 System.out.println(toString(choice,cb));
             default:
                 System.out.println("descurca-te");
