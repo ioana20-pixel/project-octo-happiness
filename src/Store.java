@@ -1,37 +1,32 @@
 import java.util.Scanner;
 
 public class Store {
-    private static AcousticGuitar AcousticGuitar;
-    private static ElectricGuitar ElectricGuitar;
-    private static ClassicGuitar ClassicGuitar;
-    private static Bass Bass;
+
+
 
     public static void main(String[] args) {
+
         System.out.println("What kind of guitar do you need?");
 
         Scanner scan = new Scanner(System.in);
 
         String choice = scan.nextLine();
-
-        String guitar;
-
+        AcousticGuitar ac = new AcousticGuitar(choice);
+        ElectricGuitar el = new ElectricGuitar(choice);
+        ClassicGuitar cl = new ClassicGuitar(choice);
+        Bass bs = new Bass(choice);
         switch (choice) {
             case "acoustic":
-                AcousticGuitar.getClass();
-
-                // Perform "original number" case.
+                ac.acoustic_guitar_level();
                 break;
             case "electric":
-                ElectricGuitar.getClass();
-                // Perform "encrypt number" case.
+                el.electric_guitar_level();
                 break;
             case "classic":
-                ClassicGuitar.getClass();
-                // Perform "decrypt number" case.
+                cl.classic_guitar_level();
                 break;
             case "bass":
-                Bass.getClass();
-                // Perform "quit" case.
+                bs.bass_guitar_level();
                 break;
 
         }

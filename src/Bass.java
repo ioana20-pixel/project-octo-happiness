@@ -2,9 +2,21 @@ import java.util.Scanner;
 
 public class Bass {
     public static String level;
-    public static String name = "Bass guitar";
+    String choice;
+    String ba = "Fender Squier Classic Vibe 70s";
+    String bi = "Ibanez GSRM20L-BK";
+    String bb = "Pasadena STB-150";
 
-    private void guitar_level(){
+    public Bass(String choice){
+        this.choice = choice;
+    }
+
+    public String toString(String choice, String level) {
+        return
+                "Suggestion for " + choice + " guitar:" + level;
+    }
+
+    void bass_guitar_level(){
 
         System.out.println("What level are you?");
         System.out.println("Beginner, intermediate or advanced?");
@@ -15,13 +27,13 @@ public class Bass {
 
         switch (level){
             case "Advanced":
-                System.out.println("Suggestion: Fender Squier Classic Vibe 70s");
+                System.out.println(toString(choice,ba));
                 break;
             case "Intermediate":
-                System.out.println("Suggestion: Ibanez GSRM20L-BK");
+                System.out.println(toString(choice,bi));
                 break;
             case "Begginer":
-                System.out.println("Suggestion: Pasadena STB-150");
+                System.out.println(toString(choice,bb));
 
             default:
                 System.out.println("descurca-te");
