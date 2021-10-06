@@ -13,8 +13,7 @@ public class AcousticGuitar {
     }
 
     public String toString(String choice, String level) {
-        return
-                "Suggestion for " + choice + " guitar:" + level;
+        return "Suggestion for " + choice + " guitar:" + level;
     }
     void acoustic_guitar_level(){
 
@@ -34,6 +33,7 @@ public class AcousticGuitar {
                 break;
             case "begginer":
                 System.out.println(toString(choice,ab));
+                break;
 
             default:
                 System.out.println("descurca-te");

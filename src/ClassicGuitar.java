@@ -12,8 +12,7 @@ public class ClassicGuitar {
 
 
     public String toString(String choice, String level) {
-        return
-                "Suggestion for " + choice + " guitar:" + level;
+        return "Suggestion for " + choice + " guitar:" + level;
     }
 
     public void classic_guitar_level(){
@@ -35,6 +34,7 @@ public class ClassicGuitar {
                 break;
             case "begginer":
                 System.out.println(toString(choice,cb));
+                break;
             default:
                 System.out.println("descurca-te");
         }

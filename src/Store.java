@@ -28,6 +28,7 @@ public class Store {
             case "bass":
                 bs.bass_guitar_level();
                 break;
+            default: System.out.println("try again");
 
         }
     }
